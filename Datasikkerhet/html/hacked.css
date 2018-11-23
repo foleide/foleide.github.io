@@ -1,0 +1,44 @@
+
+
+#sol{
+position: absolute;
+
+left: 380px;
+top: 30px;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: yellow;
+animation: glide 1s 0s ease-out forwards ;
+
+}
+
+img {
+    position: absolute;
+    top: 300px;
+    z-index: -1;
+}
+
+@keyframes glide {
+    100% { left: 810px;}
+    }
+
+.runner {
+    width: 84px;
+    height: 150px;
+    background: url("loool.png");
+    animation: run 1s steps(8) infinite, slide 3s  linear infinite;
+    background-position-x: 105px;
+    z-index: 1;
+
+    
+}
+@keyframes run {
+    100% { background-position: -700px;}
+}
+
+@keyframes slide {
+    100% { margin-left: 1220px;}
+}
+     
+
